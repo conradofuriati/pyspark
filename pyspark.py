@@ -22,8 +22,8 @@ df = spark.read.parquet(LOCAL_TEMP_FILE)
 
 # Aplica filtros e seleciona colunas específicas
 filtered_df = (
-    df.filter(col('column_name') == 'filter_value')  # Substitua por suas condições de filtro
-    .select('column1', 'column2', 'column3')  # Substitua pelas colunas desejadas
+    df.filter(col('column_name') == 'filter_value')  
+    .select('column1', 'column2', 'column3')
 )
 
 # Armazena os dados em cache
